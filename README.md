@@ -30,15 +30,15 @@
 
 | 項目 | 説明 |
 | --- | --- |
-| `title` | 記事タイトル |
+| `title` | 記事タイトル（Qiita側で表示される見出し） |
 | `tags` | タグ。**最低1つ必須**（空だと投稿時にエラー） |
-| `private` | `true`: 限定共有記事 / `false`: 公開記事 |
+| `private` | `true`: 限定共有記事（リンクを知っている人のみ閲覧可） / `false`: 公開記事 |
 | `updated_at` | 投稿時に自動で更新日時が入る |
 | `id` | 投稿時に自動で記事のUUIDが入る |
-| `organization_url_name` | 関連付ける Organization の URL 名 |
+| `organization_url_name` | 関連付ける Organization の URL 名（所属組織の記事として出したい場合に指定し、不要ならnullのまま） |
 | `slide` | `true`: スライドモードON / `false`: OFF |
-| `ignorePublish` | `true`: publish で無視され投稿されない / `false`: 投稿される |
-| `posting_campaign_uuid` | 紐付けるキャンペーンのUUID |
+| `ignorePublish` | `true`: publishコマンドで無視されQiitaに投稿されなない（下書きとして手元に置いておきたい記事にtrueを使うイメージ） / `false`: 投稿される |
+| `posting_campaign_uuid` | 記事投稿キャンペーンに紐付けるためのUUID |
 | `agreed_posting_campaign_term` | `true`: キャンペーン規約に同意（UUID指定時は必須） |
 
 ## qiita.config.json の設定
