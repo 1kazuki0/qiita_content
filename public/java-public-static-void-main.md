@@ -107,3 +107,12 @@ Javaは「Write Once, Run Anywhere（一度書けば、どこでも動く）」�
 
 この時、`JVM`は指定されたクラスの`main`メソッドを呼び出し、そこから実行を始めます。
 `main`はプログラムの実行が始まる場所、つまり「入り口」なのです。
+
+# まとめ
+1行ずつまとめると以下になります。
+
+| コード | 説明 |
+| --- | --- |
+| `public class Main {}` | Mainという名前のクラスを定義 |
+| `public static void main(String[] args) {}` | プログラムの入り口。JVMが最初に呼び出すメソッド |
+| `System.out.println("Hello, World");` | 画面に「Hello, World」を表示する処理 |
