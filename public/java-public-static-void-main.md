@@ -1,5 +1,5 @@
 ---
-title: java-public-static-voidってなに？
+title: public static void mainってなに？
 tags:
   - Java
   - 初学者
@@ -8,7 +8,7 @@ updated_at: ''
 id: null
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 posting_campaign_uuid: null
 agreed_posting_campaign_term: false
 ---
@@ -116,3 +116,17 @@ Javaは「Write Once, Run Anywhere（一度書けば、どこでも動く）」�
 | `public class Main {}` | Mainという名前のクラスを定義 |
 | `public static void main(String[] args) {}` | プログラムの入り口。JVMが最初に呼び出すメソッド |
 | `System.out.println("Hello, World");` | 画面に「Hello, World」を表示する処理 |
+
+# 参考
+
+https://qiita.com/kahatato/items/1b4921bb58731f0b7fea
+
+https://qiita.com/HALLELUJAH0901/items/f70bc737d41ed032800d
+
+https://docs.oracle.com/cd/E82638_01/jjdev/Java-overview.html#GUID-17B81887-C338-4489-924D-FDDF2468DEA7
+
+https://docs.oracle.com/javase/specs/jvms/se26/html/index.html
+
+https://wa3.i-3-i.info/word186.html
+
+https://wa3.i-3-i.info/word15008.html
