@@ -9,7 +9,7 @@ updated_at: ''
 id: null
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 posting_campaign_uuid: null
 agreed_posting_campaign_term: false
 ---
@@ -44,7 +44,7 @@ https://atcoder.jp/contests/abc466/tasks/abc466_c
 #### フラッシュとは？
 バッファに溜まっているものを「今すぐ全部送り出せ」と強制する操作のことです。
 
-# Rubyの書き方
+# Rubyの出力方法
 ```ruby
 puts 〇〇
 $stdout.flush # 今溜まっている出力を今すぐ送り出します
@@ -60,3 +60,22 @@ $stdout.sync = true
 ```
 `sync = true` にすると、「バッファに溜めず、出力するたびに毎回すぐ送り出す」設定になります。
 つまりプログラムの冒頭に記載することで、以降の`puts` / `print` が自動でフラッシュされるので、個別に`flush`を書く必要がなくなります。
+
+# 補足
+#### `$stdout.flush` 
+
+読み方:「ダラー・エスティーディーアウト・ドット・フラッシュ」
+`$stdout` は「standard output（標準出力）」の略
+画面など出力先を表すオブジェクト。
+頭の`$` はRubyでグローバル変数を表す記号
+
+#### `STDOUT.flush` 
+
+STDOUTも標準出力を表すが、これは定数。
+
+`$stdout` と `STDOUT` の違いは、`$stdout` が「差し替え可能な変数」なのに対し、`STDOUT` は「本来の標準出力を指す固定の定数」という点
+
+#### `$stdout.sync = true` 
+
+読み方:「ダラー・エスティーディーアウト・ドット・シンク・イコール・トゥルー」
+`sync` は「synchronize(同期)」の略
