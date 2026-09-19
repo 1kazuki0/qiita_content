@@ -2,11 +2,11 @@
 title: 【Ruby】atcoder インタラクティブな問題の出力方法
 tags:
   - Ruby
-  - atcoder
+  - AtCoder
   - 初心者
 private: false
-updated_at: ''
-id: null
+updated_at: '2026-09-20T07:40:20+09:00'
+id: a6d3020574ce2da45a84
 organization_url_name: null
 slide: false
 ignorePublish: false
